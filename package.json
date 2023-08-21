@@ -2,15 +2,32 @@
   "name": "Test task for Extrums company",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
   "scripts": {
-    "start": "ts-node ./src/app",
-    "build": "rimraf dist && tsc -p tsconfig.json",
-    "typeorm:cli": "ts-node ./node_modules/typeorm/cli -f src/config/typeorm.config.ts",
-    "typeorm:schema": "ts-node ./node_modules/typeorm/cli schema:sync"
+    "start:backend": "ts-node ./backend/src/app",
+    "build:backend": "rimraf ./backend/dist && tsc -p ./backend/tsconfig.json",
+    "start:frontend": "PORT=3001 react-scripts start",
+    "build:frontend": "react-scripts build"
   },
   "author": "",
   "license": "ISC",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "dependencies": {
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
@@ -31,7 +48,20 @@
     "reflect-metadata": "^0.1.13",
     "typeorm": "^0.3.10",
     "validator": "^10.11.0",
-    "winston": "^3.2.1"
+    "winston": "^3.2.1",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/node": "^16.18.38",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
@@ -53,6 +83,6 @@
     "prettier": "^2.8.8",
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^5.0.4"
+    "sass": "^1.64.0"
   }
 }
