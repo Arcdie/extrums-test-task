@@ -1,0 +1,15 @@
+/.git/
+/**/node_modules/
+/**/package-lock.json
+/**/Thumbs.db
+/**/*.DS_Store
+/.vscode/
+/.idea/
+.idea/
+.vscode/
+.git/
+.DS_Store
+/dist
+Thumbs.db
+
+*.code-workspace
