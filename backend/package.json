@@ -5,9 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "ts-node ./src/app",
-    "build": "rimraf dist && tsc -p tsconfig.json",
-    "typeorm:cli": "ts-node ./node_modules/typeorm/cli -f src/config/typeorm.config.ts",
-    "typeorm:schema": "ts-node ./node_modules/typeorm/cli schema:sync"
+    "build": "rimraf dist && tsc -p tsconfig.json"
   },
   "author": "",
   "license": "ISC",
