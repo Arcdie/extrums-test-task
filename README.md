@@ -1,6 +1,12 @@
 <h2>Test task for Extrums company<h2>
 
-# How to start
+# How to start backend
+* cd ./backend<br>
+* npm i<br>
+* npm start<br>
+
+# How to start frontend
+* cd ./frontend<br>
 * npm i<br>
 * npm start<br>
 
